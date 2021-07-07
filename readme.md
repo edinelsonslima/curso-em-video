@@ -20,3 +20,4 @@
 
 #### Javascript [40 Horas]
 - <a href="https://github.com/edinelsonslima/curso-em-video/tree/master/JavaScript" target="_blank"> JavaScript </a>
+<hr>
