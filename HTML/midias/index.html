@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Trabalhando com audio</h1>
+    <audio preload="metadata" controls loop> <!--Preload evita de carregar o audio junto com o site-->
+        <source src="./music/Café_e_Amor.mp3" type="audio/mpeg">
+        <source src="./music/Café_e_Amor.ogg" type="audio/ogg"> 
+        <source src="./music/Café_e_Amor.wav" type="audio/wav"> <!--Mais pesado-->
+        <p>Navegador não suporta o audio baixe ele <a href="./music/Café_e_Amor.mp3" download="café_e_amor.mp3">clicando aqui</a></p>
+    </audio>
+    <hr>
+
+    <h1>Videos Local</h1>
+    <video preload="metadata" controls poster="./videos/poster.jpg" width="560">
+        <source src="./videos/video.mp4" type="video/mp4">
+        <source src="./videos/video.m4v" type="video/mp4">
+        <source src="./videos/video.webv" type="video/webm">
+        <p>Seu Navegador tem suporte para este video</p>
+    </video>
+    <hr>
+    <h1>Videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6iGjjV2dyTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <h1>Videos do Vimeo</h1>
+    <iframe width="560" height="315" src="https://player.vimeo.com/video/138141662?color=ff9933&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+    <hr>
+    <h1>Imagens Dinamicas</h1>
+    <p>A imagem vai alterar de acordo com o tamanho da tela</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="./image/imagem-P.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="./image/imagem-M.png" type="image/png">
+        <img src="./image/imagem-G.png" alt="imagem grante">
+    </picture>
+    
+</body>
+</html>

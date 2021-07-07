@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #FEFAF6;
+    color: #2B2A29;
+}
+
+
+header{
+    background-color: #DEB578;
+    margin: 0 0 50px 0;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 15px #bdbab7;
+
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
+
+header > h1{
+    margin-bottom: 10px
+}
+
+header > a{
+    text-decoration: none;
+    color: #2B2A29;
+    margin-right: 5%;
+    letter-spacing: 2px;
+}
+
+header > a:last-child{
+    margin-right: 0;
+}
+
+header > a:hover{
+    text-decoration: underline;
+    letter-spacing: 4px;
+}
+
+
+main{
+    margin: auto;
+    width: 65vw;
+}
+
+section#topicos{
+    display:flex;
+    justify-content: center;
+    background-color: #DEB578;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #bdbab7;
+
+    animation: bounceInRight;
+    animation-duration: 2s;
+}
+
+section#topicos > p{
+    margin-left: 10%;
+}
+section#topicos > p:first-child{
+    margin-left: 0;
+}
+
+section>article{
+    background-color: #A9D6C9;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #bdbab7;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+section>article#txt1{
+    animation: backInDown;
+    animation-duration: 2s;
+}
+
+section>article#txt2{
+    position: relative;
+    animation: backInUp;
+    animation-duration: 2s;
+}
+
+
+section>article>aside{
+    text-align: right;
+    padding: 5px;
+    font-size: 0.9em;
+    text-shadow: 5px 4px 5px #435751;
+}
+
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    padding: 15px;
+    background-color: #03A396;
+    bottom: 0;
+
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+footer > p{
+    text-align: center;
+    letter-spacing: 3px;
+}
