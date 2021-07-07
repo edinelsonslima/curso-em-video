@@ -1,6 +1,6 @@
 <h1 align="center">JavaScript <img width="70px" height="30px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/></h1>
 <div align="center"> 
-   <img src="JavaScript/certificado.png"/>
+   <img src="./certificado.png"/>
 </div>
 <hr>
 <br>
