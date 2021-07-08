@@ -8,36 +8,36 @@
     font-weight: normal;
 }
 
+:root{
+    --cor0:#ebe5c5;
+    --cor1:#83E1AD;
+    --cor2:#3DDC84;
+    --cor3:#2FA866;
+    --cor4:#1A5C37;
+    --cor5:#063d1e;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', sans-serif;
+}
+
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --cor0:#c5ebd6;
-    --cor1:#83E1AD;
-    --cor2:#3DDC84;
-    --cor3:#2FA866;
-    --cor4:#1A5C37;
-    --cor5:#063d1e;
-    --fonte0: Arial, Helvetica, sans-serif;
-    --fonte1: 'Bebas Neue', cursive;
-    --fonte2: 'Android', sans-serif;
-}
-
 body{
     background-color: var(--cor0);
-    font-family: var(--fonte0);
+    font-family: var(--fonte-padrao);
 }
 
 header {
-    background-color: white;
+    background-color: var(--cor4);
 }
 
 header > h1{
-    color: var(--cor1);
-    font-family: var(--fonte1);
+    color: white;
+    font-family: var(--fonte-destaque);
 }
 
 header > p{
@@ -49,16 +49,36 @@ nav {
 }
   
 main {
+    max-width: 1000px;
+    min-width: 300px;
+    
+    margin : auto;
+    margin-bottom: 30px;
+    padding: 20px;
+   
     background-color: white;
+    box-shadow: 0 0 10px #00000075;
+
+    border-radius: 0 0 10px 10px;
 }
 
 main h1{
    color: var(--cor5);
-   font-family: var(--fonte2);
+   font-family: var(--fonte-android);
 }
 
 main h2{
-    font-family: var(--fonte2);
+    font-family: var(--fonte-android);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequeno{
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 footer {
